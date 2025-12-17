@@ -21,13 +21,11 @@ class HebergementSeeder extends Seeder
             [
                 'title' => 'Hôtel 2 Février',
                 'location' => 'Lomé',
-                // Le rating était une chaîne ("4.5"), on le caste en float
                 'rating' => 4.5, 
                 'price' => '45 000 FCFA/nuit',
                 'description' => 'Hôtel moderne au cœur de Lomé, proche des attractions principales et de la plage.',
-                // Les features doivent être encodées en JSON
                 'features' => json_encode(["WiFi gratuit", "Piscine", "Restaurant", "Centre d'affaires"]),
-                'image' => 'H2.jpeg', // Le chemin sera stocké sans le '/' initial
+                'image' => 'H2.jpeg', 
                 'type' => 'Hôtels',
             ],
             [
@@ -76,7 +74,6 @@ class HebergementSeeder extends Seeder
                 'rating' => 4.6,
                 'price' => '40 000 FCFA/nuit',
                 'description' => 'Lodge authentique pour explorer la savane du nord et observer la faune.',
-                // Correction de "faune d'observation" en une seule entrée
                 'features' => json_encode(["Safari", "Faune d'observation", "Terrasse commune", "Randonnées guidées"]),
                 'image' => 'lodge1.jpeg',
                 'type' => 'Lodges Écologiques',

@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             // Ajoutez votre nouveau Seeder ici :
             HebergementSeeder::class,
-            // AutresSeeders::class,
+            DestinationSeeder::class,
         ]);
         User::factory()->create([
             'name' => 'Test User',
